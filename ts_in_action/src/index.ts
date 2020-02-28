@@ -2,9 +2,11 @@
  * @Description: ts 入口文件
  * @Author: zhangkai
  * @Date: 2020-02-21 10:28:59
- * @LastEditTime: 2020-02-27 14:56:36
+ * @LastEditTime: 2020-02-28 14:53:18
  * @LastEditors: zhangkai
  */
+import './part-1/enum.ts';
+import './part-1/interface.ts';
 let userName: string = 'hello world';
 
 let arr: number [] = [1, 2, 3];
@@ -29,7 +31,19 @@ obj.x = 3;
 // symbol
 let s1: symbol = Symbol();
 let s2 = Symbol();
-console.log(s1 === s2); // false
+// console.log(s1 === s2); // false
 
 // void 表示没有任何类型，当一个函数没有返回值时，通常会见到返回值类型是 void
 let noReturn = () => {};
+
+// any
+let x;
+
+// never
+let err = () => {
+    throw new Error('error'); // 抛出错误
+}
+// 死循环
+let endless = () => {
+    while(true) {}
+}
