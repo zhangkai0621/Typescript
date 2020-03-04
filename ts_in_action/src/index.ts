@@ -2,11 +2,13 @@
  * @Description: ts 入口文件
  * @Author: zhangkai
  * @Date: 2020-02-21 10:28:59
- * @LastEditTime: 2020-02-28 14:53:18
+ * @LastEditTime: 2020-03-04 10:21:34
  * @LastEditors: zhangkai
  */
-import './part-1/enum.ts';
-import './part-1/interface.ts';
+// import './part-1/enum.ts';
+// import './part-1/interface.ts';
+import './part-1/class';
+
 let userName: string = 'hello world';
 
 let arr: number [] = [1, 2, 3];
