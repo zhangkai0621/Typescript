@@ -1,2 +1,2 @@
-# Typescript
- Typescript 基础学习
+# AnyTechnology
+各种技术学习大法
