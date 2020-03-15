@@ -6,7 +6,7 @@
     著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  * @Author: zhangkai
  * @Date: 2020-03-15 21:15:28
- * @LastEditTime: 2020-03-15 21:16:15
+ * @LastEditTime: 2020-03-15 21:38:53
  * @LastEditors: zhangkai
  */
 
@@ -14,6 +14,20 @@
  * @param {number[]} nums
  * @return {number}
  */
-var removeDuplicates = function(nums) {
 
+/* 
+    用时：92 ms
+    内存：37.4MB
+    击败：55.39%
+*/
+var removeDuplicates = function(nums) {
+    for (let i = 1; i < nums.length; i++) {
+        if (nums[i - 1] == nums[i]) {
+            nums.splice(i, 1);
+            i--;
+        }
+    }
+    return nums.length;
 };
+console.log(removeDuplicates([0,0,1,1,1,2,2,3,3,4]));
+console.log(removeDuplicates([1,1,2]));
