@@ -1,2 +1,2 @@
 # AnyTechnology
-各种技术学习大法
+算法、TypeScript、Gulp
